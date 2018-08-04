@@ -5,6 +5,7 @@ import wrapper from "./components/wrapper";
 import navbar from "./components/navbar";
 import { Menu, Icon } from 'antd';
 import './App.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
 
@@ -22,6 +23,7 @@ class App extends Component {
             return <Redirect push to="/main" />
         }
         return (
+<<<<<<< HEAD
             <Router>
                 <wrapper>
                     <Route exact path="/" component={} />
@@ -36,6 +38,25 @@ class App extends Component {
                         </React.fragment>
                 </wrapper>
             </Router>
+=======
+            <div className="App">
+                <button type="button" class="btn btn-outline-warning" btn-lg>Enter Phase Matrix Media</button>
+        <Frame>
+            <Router>
+                <div>
+                <Route path="/start" component={Start} />
+                <Route path="/home" component={Home} />
+                <Route path="/About" component={About} />
+                <Route path="/Contact" component={Contact} />
+                </div>
+            </Router>
+        </Frame>
+      </div>
+    );
+  }
+}
+            </div>
+>>>>>>> 128ed6f67f3f6c28e2fa06807f5888495179d79e
         );
     }
 }
