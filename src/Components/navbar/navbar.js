@@ -5,7 +5,7 @@ const MenuItemGroup = Menu.ItemGroup;
 
 
 
-  class navbar extends React.Component {
+  class App extends React.Component {
     state = {
       current: 'code-o',
     }
@@ -19,7 +19,6 @@ const MenuItemGroup = Menu.ItemGroup;
   
     render() {
       return (
-        <react.fragment>
         <Menu
           onClick={this.handleClick}
           selectedKeys={[this.state.current]}
@@ -29,7 +28,7 @@ const MenuItemGroup = Menu.ItemGroup;
             <Icon type="code-o" />Home
           </Menu.Item>
           <Menu.Item key="profile" disabled>
-            <Icon type="profile" className = {window.location.pathname === "/about" ? "Menu.Item active" : "nav-item"} />About
+            <Icon type="profile" />About
           </Menu.Item>
           <SubMenu title={<span className="submenu-title-wrapper"><Icon type="setting" />Team Projects</span>}>
             <MenuItemGroup title="Team Projects">
@@ -47,9 +46,8 @@ const MenuItemGroup = Menu.ItemGroup;
             <a href="" target="_blank" rel="noopener noreferrer">Contact</a>
           </Menu.Item>
         </Menu>
-        </react.fragment>
       );
     }
   }
 
-export default navbar;
+ReactDOM.render(<App />, mountNode);
