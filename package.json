@@ -1,17 +1,37 @@
 {
-  "name": "antd-demo",
-  "version": "0.1.0",
+  "name": "pmatrixport",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "antd": "^3.7.0",
-    "react": "^16.4.1",
+    "gsap-then": "^2.1.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-scrollmagic-parallax": "^1.0.4",
+    "scripts": "^0.1.0",
+    "scrollmagic": "^2.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMatrixMedia/React-Portfolio.git"
+  },
+  "author": "Chris Faison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PMatrixMedia/React-Portfolio/issues"
+  },
+  "homepage": "https://github.com/PMatrixMedia/React-Portfolio#readme"
 }

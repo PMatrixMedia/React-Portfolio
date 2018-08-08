@@ -1,11 +1,13 @@
+import React, {Component} from 'react';
 import { Menu, Icon } from 'antd';
+
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 
 
-  class App extends React.Component {
+  class navbar extends React.Component {
     state = {
       current: 'code-o',
     }
@@ -50,4 +52,4 @@ const MenuItemGroup = Menu.ItemGroup;
     }
   }
 
-ReactDOM.render(<App />, mountNode);
+export default navbar;

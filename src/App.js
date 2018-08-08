@@ -1,47 +1,46 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import {Route, redirect} from react-router;
-import wrapper from "./components/wrapper";
-import navbar from "./components/navbar";
-import { Menu, Icon } from 'antd';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import navbar from './Components/navbar'
+import wrapper from './Components/wrapper';
+import jumbotron from './Components/jumbotron';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+
+
 
 class App extends Component {
 
-    handleOnClick = () => {
-        this.setState({redirect:true});
+    handleOnClick(){
+        console.log("open sesame")
     }
-
-
-
 
 
 
     render() {
-        if (this.state.redirect) {
-            return <Redirect push to="/main" />
-        }
+      
         return (
-            
-            <Router>
+            <div className="App">
             <wrapper>
-                <Route exact path="/" component={} />
-                <Route exact path="/about" component={} />
-                <Route exact path="/projects" Component={carousel} />
-                <Route exact path="/contact" component={contact} />
-                <Route exact path="/VR"/>
-                    <React.fragment className="App">
-                        <jumbotron>
-                       <button onClick={this.handleOnclick} type="button" class="btn btn-outline-warning" btn-lg>Enter Phase Matrix Media</button>
-                        </jumbotron>
-                    </React.fragment>
-            </wrapper>
-            </Router>       
+            <Router>
+                <React.fragment>
+                    <jumbotron>
+                         <Route exact path="/" />
+                         <Route exact path="/about"/>
+                         <Route exact path="/projects" />
+                         <Route exact path="/contact" />
+                         <Route exact path="/VR"/>                       
+                         <button onClick={this.handleOnclick} type="button" class="btn btn-outline-warning" btn-lg>Enter Phase Matrix Media</button> 
+                    </jumbotron>
+                </React.fragment>
+            </Router> 
+            </wrapper>      
+        </div>
    
     );
    
-    }
 }
+ };
 
-export default App;
+
+
+ export default App;

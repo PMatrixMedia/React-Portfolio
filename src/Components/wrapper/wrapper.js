@@ -1,6 +1,22 @@
-import React from "react";
-import "wrapper.css";
+import React from 'react';
+import './wrapper.css';
 
-const wrapper = props => <main ClassName="wrapper" {...props} />;
+class wrapper extends React.Component {
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return(
+            <React.Fragment>
+                <div>
+                 </div>
+                 {this.props.children}
+            </React.Fragment>
+        );  
+    }
+
+
+}
 
 export default wrapper;
