@@ -1,11 +1,11 @@
 import React from 'react';
-import {TweenMax, ease } from 'gsap-then';
+import {TweenMax, ease, Expo } from 'gsap-then';
 
 class scrolltext extends React.component {
 
     componentDidMount() {
         const ScrollMagic = require('ScrollMagic');
-        const TweenMax = require('gasp')
+        const TweenMax = require('gasp-then')
         const controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: 0 } });
 
 let firstText ;
