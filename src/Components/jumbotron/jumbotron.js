@@ -4,6 +4,10 @@ import {Jumbotron, Container} from 'reactstrap';
 import introtext from '../introtext/introtext.js';
 import {TweenMax, ease, Expo } from 'gsap-then';
 
+componentDidMount(introtext){
+
+}
+
 
 const Main = (props) => {
 return(
