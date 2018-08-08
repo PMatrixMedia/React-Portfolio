@@ -32,13 +32,13 @@ const Scrollscene1 = new ScrollMagic.Scene ({
 
 const Scrollscene2 = new ScrollMagic.Scene({
      duration: 2,
-     triggerElement: '.conrainer',
+     triggerElement: '.container',
      triggerHook: 0
 })
    .addIndicators()
    .addTo(controller)
    .on('progress', function(e){
-       TweenMax.to(thirdText, 3, {x: (-e.progress) * 250, ease: Expo.easeOut});
+       TweenMax.to(Secondinverse, 3, {x: (-e.progress) * 250, ease: Expo.easeOut});
    });
 
 const Scrollscene3 = new ScrollMagic.Scene({
