@@ -1,11 +1,11 @@
 import React from 'react';
-import {TweenMax} from 'gasp';
-import {TweenMax} from 'gsap-then';
+import {TweenMax, ease } from 'gsap-then';
 
 class scrolltext extends React.component {
 
     componentDidMount() {
         const ScrollMagic = require('ScrollMagic');
+        const TweenMax = require('gasp')
         const controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: 0 } });
 
 let firstText ;
@@ -13,11 +13,11 @@ let Secondinverse  ;
 let thirdText ; 
 
 
-console.log(Jumboscroll + windowWidth)
-TweenMax.set(Secondinverse, {reverse:(2)});
+console.log('scroll magic')
+TweenMax.set(Secondinverse, {reverse:(2), x:'100%'});
 TweenMax.to(firstText, 100, {x: '-100%'});
 TweenMax.to(thirdText, 100, {x: '-100%'});
-TweenMax.to(Secondinverse, 10, {reverse:(2)});
+TweenMax.to(Secondinverse, 10, {reverse:(2), x:'100%'});
 
 const Scrollscene1 = new ScrollMagic.Scene ({
     duration: 2,
@@ -53,7 +53,7 @@ const Scrollscene3 = new ScrollMagic.Scene({
     });
 
 }
-}
+}0
 
 
 export default scrolltext;
