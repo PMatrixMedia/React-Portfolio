@@ -17,9 +17,9 @@ class introtext extends React.component {
         const TweenMax = require('gsap-then');
         const controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: 0 } });
 
-let firstText ;
-let Secondinverse  ;
-let thirdText ; 
+let firstText = firstText;
+let Secondinverse = Secondinverse;
+let thirdText = thirdText ; 
 
 
 console.log('scroll magic')

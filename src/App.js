@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import navbar from './Components/navbar'
-import wrapper from './Components/wrapper';
-import Main from './Components/jumbotron';
+import intro from './Components/intro';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
@@ -10,9 +8,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
 
-    handleOnClick(){
-        console.log("open sesame")
-    }
+  
 
 
 
@@ -23,14 +19,13 @@ class App extends Component {
             <wrapper>
             <Router>
                 <React.fragment>
-                    <Main>
+                    <intro>
                          <Route exact path="/" />
                          <Route exact path="/about"/>
                          <Route exact path="/projects" />
                          <Route exact path="/contact" />
-                         <Route exact path="/VR"/>                       
-                         <button onClick={this.handleOnclick} type="button" class="btn btn-outline-warning" btn-lg>Enter Phase Matrix Media</button> 
-                    </Main>
+                         <Route exact path="/VR"/>                        
+                    </intro>
                 </React.fragment>
             </Router> 
             </wrapper>      

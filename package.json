@@ -12,6 +12,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-scrollmagic-parallax": "^1.0.4",
+    "react-spring": "^5.6.7",
     "reactstrap": "^6.3.1",
     "scripts": "^0.1.0",
     "scrollmagic": "^2.0.5"
