@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import { Parallax } from 'react-spring'
 import { Button } from 'reactstrap';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import ReactDOM from 'react-dom'
 import './Intro.css'
 
@@ -28,10 +30,14 @@ const Page = ({ offset, caption, first, second, gradient, onClick, button }) => 
         <p style={{ fontsize: 10}}>{second}</p>
       </span>
     </Parallax.Layer>
-    <Parallax.Layer className="site button" offset={offset} speed={0.5}>
+    <Parallax.Layer className="sitebutton" offset={offset} speed={0.4}>
       <span>
-      <Button color="warning">Enter</Button>{'  '}
+        <div>
+         {offset + 5}
+          <Button outline color="warning" size="lg">Enter</Button>{' '}
+        </div>
       </span>
+    </Parallax.Layer>
   </React.Fragment>
 )
 
@@ -42,12 +48,18 @@ export default class Intro extends Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
-    
+      <Router>
       <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
-        <Page offset={0} gradient="pink" caption="PhaseMatrix Media" first="Click to Scroll" second="Buttons Give You Access" onClick={() => this.scroll(1)} />
+        <Route exact path="/" />
+        <Route exact path="/about"/>
+        <Route exact path="/projects" />
+        <Route exact path="/contact" />
+        <Route exact path="/VR"/>        
+        <Page offset={0} gradient="pink" caption="PhaseMatrix Media" first="Click Slope to Scroll" second="Buttons Give You Access" onClick={() => this.scroll(1)} />
         <Page offset={1} gradient="teal" caption="All things VR" first="VR & AR" second="" onClick={() => this.scroll(2)} />
         <Page offset={2} gradient="tomato" caption="Who I am" first="Portfolio" second="" onClick={() => this.scroll(0)} />
       </Parallax>
+      </Router>
     
     )
   }

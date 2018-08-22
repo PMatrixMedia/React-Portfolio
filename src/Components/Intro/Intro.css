@@ -71,3 +71,20 @@
     background: linear-gradient(to right, tomato 0%, gold 100%);
   }
   
+.sitebutton{
+  margin-top:80px;
+  margin-left: -800px;
+ 
+  padding: 5px;
+  top: 10px;
+
+  position: relative;
+  
+}
+.Button {
+  margin-top: 10px;
+  margin-right: 350px;
+  padding: 5px;
+  top: 10px;
+  position: relative;
+}
