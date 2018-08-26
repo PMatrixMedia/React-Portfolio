@@ -72,6 +72,7 @@ export default class Intro extends Component {
     super();
   }
   scroll = to => this.refs.parallax.scrollTo(to);
+  vr = to => this.link;
   render() {
     return (
       <Router>
@@ -98,14 +99,15 @@ export default class Intro extends Component {
               Enter
             </Button>
           </div>
-          <Route exact path="/VR" />
+
+          <Route exact path="/VR" component="Navbar" />
           <Page
             offset={1}
             gradient="teal"
             caption="All things VR"
             first="VR & AR"
             onClick={() => this.scroll(2)}
-            BtnClick={() => this.BtnClick(<Navbar />)}
+            BtnClick={() => this.link(<Navbar />)}
           />
           <div className="sitebutton2">
             <Button color="primary" size="lg">
