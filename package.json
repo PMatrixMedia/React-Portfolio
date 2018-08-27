@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "Express": "3.0.1",
     "antd": "^3.7.0",
     "gsap-then": "^2.1.1",
+    "http": "latest",
+    "path": "latest",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
