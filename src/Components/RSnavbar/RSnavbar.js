@@ -1,4 +1,5 @@
 import React from "react";
+import "./navbar.css";
 import {
   Collapse,
   Navbar,
@@ -29,29 +30,34 @@ export default class RSnavbar extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <div className="Navbar">
+        <Navbar color="secondary" light expand="md">
+          <NavbarBrand href="/">PhaseMatrixMedia</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/components/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
+                <NavLink href="https://github.com/PMatrixMedia">GitHub</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://codesandbox.io/u/PMatrixMedia">
+                  Code_SandBox
                 </NavLink>
               </NavItem>
+
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  Projects
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
+                  <DropdownItem>Stream Lyfe</DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
+                  <DropdownItem>Cuber</DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>JamSesh</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

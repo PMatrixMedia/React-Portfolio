@@ -73,30 +73,30 @@
 }
 
 .sitebutton1 {
-  margin-top: 210px;
+  margin-top: 410px;
   margin-left: 310px;
   padding: 5px;
   top: 230px;
-  position: absolute;
-  display: flex;
+  position: fixed;
+  display: inline-flex;
 }
 
 .sitebutton2 {
-  margin-top: 210px;
-  margin-left: 1090px;
+  margin-top: 410px;
+  margin-left: 1490px;
   padding: 5px;
   top: 230px;
-  position: absolute;
-  display: flex;
+  position: fixed;
+  display: inline-flex;
 }
 
 .sitebutton3 {
-  margin-top: 210px;
-  margin-left: 1880px;
+  margin-top: 410px;
+  margin-left: 2650px;
   padding: 5px;
   top: 230px;
-  position: absolute;
-  display: flex;
+  position: fixed;
+  display: inline-flex;
 }
 .Button {
   margin-top: 10px;
