@@ -6,6 +6,4 @@ app.use(express.static("Pages"));
 
 app.use(express.static("Components"));
 
-app.get("/", function(req, res) {
-  res.send("hello world");
-});
+app.use(express.static("images"));

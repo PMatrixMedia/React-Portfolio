@@ -38,5 +38,6 @@ const Page = ({ Navbar, Jumbotron, Container, onClick }) => (
     }
   }
 
+ReactDOM.render(<About />, document.getElementById("root"));
 
   

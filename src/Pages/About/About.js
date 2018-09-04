@@ -3,6 +3,7 @@ import RSnavbar from '../../Components/RSnavbar/RSnavbar';
 import { Jumbotron, Container, Media } from "reactstrap";
 import "./style.css";
 import ReactDOM from 'react-dom';
+import img from './avatar.jpg'
 
  class About extends React.Component {
   constructor(props) {
@@ -15,17 +16,19 @@ import ReactDOM from 'react-dom';
         <Jumbotron fluid className="Jumbotron">
           <Container fluid className="container">
             <Media>
-              <Media left href="#">
-                <Media object data-src="" alt="selfimage" />
-              </Media>
-              <Media body>
-                <Media heading>About Me</Media>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                <Media left className="avatar" href={img}>
+                <Media className='profile-image' object src={img} alt={img} />
+            </Media>
+            <Media heading className='bodyheading'>About Me</Media>
+              <br>
+              </br>
+            <Media body className='bodytext'>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                 scelerisque ante sollicitudin commodo. Cras purus odio,
                 vestibulum in vulputate at, tempus viverra turpis. Fusce
                 condimentum nunc ac nisi vulputate fringilla. Donec lacinia
                 congue felis in faucibus.
-              </Media>
+            </Media>
             </Media>
           </Container>
         </Jumbotron>

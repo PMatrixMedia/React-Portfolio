@@ -1,5 +1,7 @@
 import React from "react";
 import "./navbar.css";
+import git from './GitHub.png'
+import linkedin from './Logoln.png'
 import {
   Collapse,
   Navbar,
@@ -40,15 +42,14 @@ export default class RSnavbar extends React.Component {
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem> 
-                <NavLink href="https://github.com/PMatrixMedia">Github
+                <NavLink href="https://github.com/PMatrixMedia"><img src={git}/>
                 </NavLink>
               <NavItem>
                 <NavLink href="https://codesandbox.io/u/PMatrixMedia">
                   Code Sand Box
                 </NavLink>
               </NavItem>
-              <NavLink href="www.linkedin.com/in/christopher-faison-1b7b6948">
-                  Linkedin
+              <NavLink href="www.linkedin.com/in/christopher-faison-1b7b6948"><img src={linkedin}/>
                 </NavLink>
 
               <UncontrolledDropdown nav inNavbar>
