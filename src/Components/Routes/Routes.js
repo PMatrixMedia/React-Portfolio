@@ -1,27 +1,19 @@
-import react from 'react';
-import {Route, IndexRoute, BrowserRouter} from 'react-router';
+import React from 'react';
+import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import Intro from '../Intro/Intro';
 import Template from '../Template/Template';
 import About from '../../Pages/About/About' ;
+import './routes.css'
 
-const createRoutes = () => {
-    return (
-        <BrowserRouter>
-        <Route
-        path={'/'}
-        component={Template}>
-            <IndexRoute
-                component={Intro}/>
-                <Route
-                    path={'/about'}
-                    component={About}/>
-                <Route
-                    path={'/VR'}
-                    component={VR}/>
-                 </Route>
-        </BrowserRouter>
-    )
-}
-    const Routes = createRoutes()
-    
-export default Routes;
+const Routes = () => (
+    <Router>
+        <React.Fragment>
+            <Link to="/"></Link>
+            <Link to="/about"></Link>
+            <Route exact path="/" component={Intro}/>
+            <Route exact path="/about" component={About}/>
+        </React.Fragment>
+    </Router>
+  )
+
+  export default Routes

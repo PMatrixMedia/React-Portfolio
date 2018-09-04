@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Intro from './Components/Intro/Intro';
 import registerServiceWorker from './registerServiceWorker';
+import Routes from './Components/Routes/Routes'
 
-ReactDOM.render(<Intro />, document.getElementById('root'));
+ReactDOM.render(<Routes />, document.getElementById('root'));
 registerServiceWorker();

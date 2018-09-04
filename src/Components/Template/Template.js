@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {ReactDOM} from 'react-router-dom'
+import {ReactDOM} from 'react-dom'
 import Intro from '../Intro/Intro'
 
 export default class Template extends Component {
@@ -19,5 +19,3 @@ export default class Template extends Component {
     }
 };
 
-
-ReactDOM.render(<Template />, document.getElementById("root"));

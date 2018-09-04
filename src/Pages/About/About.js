@@ -1,8 +1,14 @@
+import React, { Component } from 'react';
 import RSnavbar from '../../Components/RSnavbar/RSnavbar';
 import { Jumbotron, Container, Media } from "reactstrap";
 import "./style.css";
+import ReactDOM from 'react-dom';
 
-const About = () => {
+ class About extends React.Component {
+  constructor(props) {
+    super();
+  }
+  render() {
     return (
       <div>
         <RSnavbar className="Nav" />
@@ -26,6 +32,9 @@ const About = () => {
       </div>
     )
   }
+}
 
+
+  ReactDOM.render(<About />, document.getElementById("root"));
 
 export default About;

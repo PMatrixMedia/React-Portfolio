@@ -38,15 +38,18 @@ export default class RSnavbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Home</NavLink>
+                <NavLink href="/">Home</NavLink>
               </NavItem> 
-                <NavbarBrand a class="navbar-brand" href="https://github.com/PMatrixMedia"><img src="../../src/Images/GitHub-Mark.png" alt=""></img>
-                </NavbarBrand>
+                <NavLink href="https://github.com/PMatrixMedia">Github
+                </NavLink>
               <NavItem>
                 <NavLink href="https://codesandbox.io/u/PMatrixMedia">
-                  Code_SandBox
+                  Code Sand Box
                 </NavLink>
               </NavItem>
+              <NavLink href="www.linkedin.com/in/christopher-faison-1b7b6948">
+                  Linkedin
+                </NavLink>
 
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

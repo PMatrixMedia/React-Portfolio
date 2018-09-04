@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Parallax } from "react-spring";
 import { Button } from "reactstrap";
+import About from "../../Pages/About/About";
 import "./Intro.css";
 
 
@@ -54,7 +55,7 @@ export default class Intro extends Component {
   }
   scroll = to => this.refs.parallax.scrollTo(to);
 
-  
+  Portenter = to => this.Portenter("/about");
   
 
   render() {
@@ -73,7 +74,7 @@ export default class Intro extends Component {
        
                     <Page offset={2} gradient="tomato" caption="Who I am" first="Portfolio" second="" onDoubleClick={() => this.scroll(0)}/>
                         <div className="sitebutton3">
-                            <Button onClick={() => this.Portenter} color="warning" size="lg">Enter</Button>
+                            <Button onClick={() => this.Portenter} color="warning" size="lg" href="/about">Enter</Button>
                         </div>
         </Parallax>
      
