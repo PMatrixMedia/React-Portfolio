@@ -14,6 +14,7 @@ import {
   DropdownItem
 } from "reactstrap";
 
+
 export default class RSnavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -38,10 +39,9 @@ export default class RSnavbar extends React.Component {
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/components/">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/PMatrixMedia">GitHub</NavLink>
-              </NavItem>
+              </NavItem> 
+                <NavbarBrand a class="navbar-brand" href="https://github.com/PMatrixMedia"><img src="../../src/Images/GitHub-Mark.png" alt=""></img>
+                </NavbarBrand>
               <NavItem>
                 <NavLink href="https://codesandbox.io/u/PMatrixMedia">
                   Code_SandBox

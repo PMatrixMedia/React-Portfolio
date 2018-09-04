@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Intro from "./Components/Intro";
-import registerServiceWorker from "./registerServiceWorker";
-import About from "./Pages/About/About";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Intro from './Components/Intro/Intro';
+import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<About />, document.getElementById("root"));
+ReactDOM.render(<Intro />, document.getElementById('root'));
 registerServiceWorker();

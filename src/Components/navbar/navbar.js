@@ -7,7 +7,7 @@ const MenuItemGroup = Menu.ItemGroup;
 
 
 
-  class navbar extends React.Component {
+  class Navbar extends React.Component {
     state = {
       current: 'code-o',
     }
@@ -30,13 +30,13 @@ const MenuItemGroup = Menu.ItemGroup;
             <Icon type="code-o" />Home
           </Menu.Item>
           <Menu.Item key="profile" disabled>
-            <Icon type="profile" />About
+            <Icon type="profile" />Blog
           </Menu.Item>
-          <SubMenu title={<span className="submenu-title-wrapper"><Icon type="setting" />Team Projects</span>}>
-            <MenuItemGroup title="Team Projects">
-              <Menu.Item key="setting:1">Streamlyfe</Menu.Item>
-              <Menu.Item key="setting:2">Cuber</Menu.Item>
-              <Menu.Item key="setting:3">Jamsesh</Menu.Item>
+          <SubMenu title={<span className="submenu-title-wrapper"><Icon type="setting" />Features</span>}>
+            <MenuItemGroup title="Site Features">
+              <Menu.Item key="setting:1">Remote Access</Menu.Item>
+              <Menu.Item key="setting:2">API</Menu.Item>
+              <Menu.Item key="setting:3">Music</Menu.Item>
             </MenuItemGroup>
             <MenuItemGroup title="Coding Repos">
               <Menu.Item key="setting:1">Github</Menu.Item>
@@ -52,4 +52,4 @@ const MenuItemGroup = Menu.ItemGroup;
     }
   }
 
-export default navbar;
+export default Navbar;

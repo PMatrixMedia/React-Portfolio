@@ -1,39 +1,30 @@
 {
-  "name": "pmatrixport",
+  "name": "react-portfolio",
   "version": "1.0.0",
-  "private": true,
+  "description": "Phase Matrix Media Site backup and Source Control.",
+  "main": "index.js",
   "dependencies": {
-    "Express": "3.0.1",
-    "antd": "^3.7.0",
-    "gsap-then": "^2.1.1",
-    "http": "latest",
-    "path": "latest",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "antd": "^3.9.1",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "path": "^0.12.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "react-scrollmagic-parallax": "^1.0.4",
-    "react-spring": "^5.6.7",
-    "reactstrap": "^6.3.1",
-    "scripts": "^0.1.0",
-    "scrollmagic": "^2.0.5"
+    "react-spring": "^5.6.13",
+    "reactstrap": "^6.4.0"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PMatrixMedia/React-Portfolio.git"
   },
-  "author": "Chris Faison",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PMatrixMedia/React-Portfolio/issues"
