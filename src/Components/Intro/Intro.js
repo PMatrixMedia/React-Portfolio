@@ -1,22 +1,19 @@
 import React, { Component } from "react";
 import { Parallax } from "react-spring";
 import { Button } from "reactstrap";
-import createHistory from "history/createBrowserHistory"
-import  {browserHistory} from 'react-router';
 import { BrowserRouter as Router, Route, Link,  } from "react-router-dom";
-import ReactDOM from "react-dom";
 import "./Intro.css";
 
 
 
-const Page = ({offset, caption, first, second, gradient, onClick, }) => (
+const Page = ({offset, caption, first, second, gradient, onDoubleClick }) => (
 
     <React.Fragment>
-        <Parallax.Layer offset={offset} speed={0.2} onClick={onClick}>
+        <Parallax.Layer offset={offset} speed={0.2} onDoubleClick={onDoubleClick}>
           <div className="slopeBegin" />
         </Parallax.Layer>
 
-    <Parallax.Layer offset={offset} speed={-0.2} onClick={onClick}>
+    <Parallax.Layer offset={offset} speed={-0.2} onDoubleClick={onDoubleClick}>
       <div className={`slopeEnd ${gradient}`} />
     </Parallax.Layer>
 
@@ -49,7 +46,7 @@ const Page = ({offset, caption, first, second, gradient, onClick, }) => (
   </React.Fragment>
 );
 
-const history = createHistory();
+
 
 
 export default class Intro extends Component {
@@ -57,29 +54,27 @@ export default class Intro extends Component {
     super();
   }
   scroll = to => this.refs.parallax.scrollTo(to);
+
   
-  onNavigateAbout = (onClick) => {
-        (onClick).then(('about')       
-    )     
-}
+  
 
   render() {
   return (
       <Router>
         <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
-                    <Page offset={0} gradient="pink" caption="PhaseMatrix Media" first="Click Slope to Scroll" second="Buttons Give You Access"  onClick={() => this.scroll(1)}/>
+                    <Page offset={0} gradient="pink" caption="PhaseMatrix Media" first="Double Click Slope to Scroll" second="Buttons Give You Access to the Site"  onDoubleClick={() => this.scroll(1)}/>
                         <div className="sitebutton1">
                           <Button color="danger" size="lg">Enter</Button>
                         </div>
 
-                    <Page offset={1} gradient="teal" caption="All things VR" first="VR & AR" onClick={() => this.scroll(2)}/>
+                    <Page offset={1} gradient="teal" caption="All things VR" first="VR & AR" onDoubleClick={() => this.scroll(2)}/>
                         <div className="sitebutton2">
                             <Button color="primary" size="lg">Enter</Button>
                         </div>
        
-                    <Page offset={2} gradient="tomato" caption="Who I am" first="Portfolio" second="" onClick={() => this.scroll(0)}/>
+                    <Page offset={2} gradient="tomato" caption="Who I am" first="Portfolio" second="" onDoubleClick={() => this.scroll(0)}/>
                         <div className="sitebutton3">
-                            <Button onClick={this.onNavigateAbout} color="warning" size="lg" >Enter</Button>
+                            <Button onClick={() => this.Portenter} color="warning" size="lg"><Link to={'/about'}>Enter</Link></Button>
                         </div>
         </Parallax>
       </Router>
@@ -89,4 +84,5 @@ export default class Intro extends Component {
 
 
 
-ReactDOM.render(<Intro />, document.getElementById("root"));
+
+

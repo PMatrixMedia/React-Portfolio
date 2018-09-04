@@ -1,6 +1,6 @@
 .Jumbotron {
-  background-color: yellow;
-  color: Black;
+  background-color: orange;
+  color: blue;
 }
 
 .Nav {
@@ -8,5 +8,5 @@
 }
 
 .Container {
-  background-color: yellow;
+  background-color: orange;
 }

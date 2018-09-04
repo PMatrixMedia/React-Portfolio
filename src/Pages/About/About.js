@@ -1,32 +1,12 @@
-import React, { Component } from "react";
-import RSnavbar from "../../Components/RSnavbar/RSnavbar";
-import Main from "../../Components/Main";
-import ReactDOM from "react-dom";
+import RSnavbar from '../../Components/RSnavbar/RSnavbar';
 import { Jumbotron, Container, Media } from "reactstrap";
 import "./style.css";
 
-const Page = ({
-  RSnavbar,
-  Jumbotron,
-  Container,
-  onClick,
-  button,
-  BtnClick
-}) => (
-  <div>
-    <React.Fragment />
-  </div>
-);
-
-export default class About extends Component {
-  constructor(props) {
-    super();
-  }
-  render() {
+const About = () => {
     return (
       <div>
         <RSnavbar className="Nav" />
-        <Jumbotron Fluid className="Jumbotron">
+        <Jumbotron fluid className="Jumbotron">
           <Container fluid className="container">
             <Media>
               <Media left href="#">
@@ -44,8 +24,8 @@ export default class About extends Component {
           </Container>
         </Jumbotron>
       </div>
-    );
+    )
   }
-}
 
-ReactDOM.render(<About />, document.getElementById("root"));
+
+export default About;
