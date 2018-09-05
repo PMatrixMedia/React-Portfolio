@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import Intro from '../Intro/Intro';
 import Template from '../Template/Template';
+import PhaseMain from '../../Pages/PhaseMain/PhaseMain'
 import About from '../../Pages/About/About' ;
 import './routes.css'
 
@@ -10,7 +11,9 @@ const Routes = () => (
         <React.Fragment>
             <Link to="/"></Link>
             <Link to="/about"></Link>
+            <Link to="/main"></Link>
             <Route exact path="/" component={Intro}/>
+            <Route exact path="/main" component={PhaseMain}/>
             <Route exact path="/about" component={About}/>
         </React.Fragment>
     </Router>

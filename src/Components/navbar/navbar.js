@@ -25,6 +25,7 @@ const MenuItemGroup = Menu.ItemGroup;
           onClick={this.handleClick}
           selectedKeys={[this.state.current]}
           mode="horizontal"
+          theme="dark"
         >
           <Menu.Item key="code-o">
             <Icon type="code-o" />Home

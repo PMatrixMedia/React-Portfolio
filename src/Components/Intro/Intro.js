@@ -56,6 +56,7 @@ export default class Intro extends Component {
   scroll = to => this.refs.parallax.scrollTo(to);
 
   Portenter = to => this.Portenter("/about");
+  PhasEnter = to => this.PhasEnter("/main")
   
 
   render() {
@@ -64,7 +65,7 @@ export default class Intro extends Component {
         <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
                     <Page offset={0} gradient="pink" caption="PhaseMatrix Media" first="Double Click Slope to Scroll" second="Buttons Give You Access to the Site"  onDoubleClick={() => this.scroll(1)}/>
                         <div className="sitebutton1">
-                          <Button color="danger" size="lg">Enter</Button>
+                          <Button onClick={() => this.PhasEnter} color="danger" size="lg"href="/main">Enter</Button>
                         </div>
 
                     <Page offset={1} gradient="teal" caption="All things VR" first="VR & AR" onDoubleClick={() => this.scroll(2)}/>

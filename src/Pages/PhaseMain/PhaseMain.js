@@ -1,43 +1,38 @@
 
 import React, { Component } from "react";
-import Navbar from '../../Components/Navbar/Navbar';
+import Navbar from '../../Components/navbar/Navbar';
 import ReactDOM from "react-dom";
 import { Jumbotron, Container, Media } from "reactstrap";
+import './antd.css';
 import "./style.css";
 
 
 
 
-
-
-
-
-const Page = ({ Navbar, Jumbotron, Container, onClick }) => (
-    <div>
-      <React.Fragment />
-    </div>
-  );
-  
-
-
- export default class PhaseMain extends Component {
+  class PhaseMain extends Component {
     constructor(props) {
       super();
     }
     render() {
       return (
         <div>
-          <Navbar className="Nav" />
+        <React.Fragment>
+          <Navbar/>
+          <div>
           <Jumbotron Fluid className="Jumbotron">
-            <Container fluid className="container">
-        
+            <Container Fluid className="container">
+          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
             </Container>
           </Jumbotron>
+          </div>
+          </React.Fragment>
         </div>
       );
     }
   }
 
-ReactDOM.render(<About />, document.getElementById("root"));
+ReactDOM.render(<PhaseMain />, document.getElementById("root"));
 
-  
+  export default PhaseMain;
