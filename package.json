@@ -1,15 +1,19 @@
 {
   "name": "react-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Phase Matrix Media Site backup and Source Control.",
   "main": "index.js",
   "dependencies": {
     "antd": "^3.9.1",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "http": "0.0.0",
     "path": "^0.12.7",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-popper": "^1.0.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.5",
     "react-spring": "^5.6.13",
     "reactstrap": "^6.4.0"
   },
@@ -24,10 +28,10 @@
     "type": "git",
     "url": "git+https://github.com/PMatrixMedia/React-Portfolio.git"
   },
-  "author": "",
+  "author": "Faizendub",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PMatrixMedia/React-Portfolio/issues"
   },
-  "homepage": "https://github.com/PMatrixMedia/React-Portfolio#readme"
+  "homepage": "http://www.phasematrixmedia.com"
 }
