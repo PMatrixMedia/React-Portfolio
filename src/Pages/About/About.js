@@ -17,7 +17,7 @@ import img from './avatar.jpg'
           <Container fluid className="container">
             <Media>
                 <Media left className="avatar" href={img}>
-                <Media className='profile-image' object src={img} alt={img} />
+                <Media className='profile-image' object src={'https://www.dropbox.com/s/0m7tw5d31hopcsh/avatar.jpg?dl=0'} alt={img} />
             </Media>
             <Media heading className='bodyheading'>About Me</Media>
               <br>
