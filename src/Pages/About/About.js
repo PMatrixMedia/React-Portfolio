@@ -16,18 +16,15 @@ import img from './avatar.jpg'
         <Jumbotron fluid className="Jumbotron">
           <Container fluid className="container">
             <Media>
-                <Media left className="avatar" href={'https://www.dropbox.com/s/0m7tw5d31hopcsh/avatar.jpg?dl=0'}>
-                <Media className='profile-image' object src={img} alt={img} />
+                <Media left className="avatar" href={img}>
+                <Media className='profile-image' object src={'./avatar.jpg'} alt={img} />
             </Media>
             <Media heading className='bodyheading'>About Me</Media>
               <br>
               </br>
             <Media body className='bodytext'>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin commodo. Cras purus odio,
-                vestibulum in vulputate at, tempus viverra turpis. Fusce
-                condimentum nunc ac nisi vulputate fringilla. Donec lacinia
-                congue felis in faucibus.
+            I am a full-stack web developer with experience in both React and Angular. Major technologies I've used include, but not exclusive to Powershell, HTML5, CSS3, JavaScript, jQuery, Node, Express, MySQL, MongoDB, Mongoose, and Handlebars.
+            I also have a very extensive background in windows based administration and SCCM.
             </Media>
             </Media>
           </Container>

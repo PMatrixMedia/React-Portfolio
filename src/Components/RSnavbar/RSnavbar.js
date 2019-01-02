@@ -42,15 +42,14 @@ export default class RSnavbar extends React.Component {
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem> 
-                <NavLink href="https://github.com/PMatrixMedia"><img src={git}/>GitHub
+                <NavLink href="https://github.com/PMatrixMedia"><img src={git}/>
                 </NavLink>
               <NavItem>
                 <NavLink href="https://codesandbox.io/u/PMatrixMedia">
                   Code Sand Box
                 </NavLink>
               </NavItem>
-              <NavLink href="www.linkedin.com/in/christopher-faison-1b7b6948"><img src={linkedin}/>Linkedin
-                </NavLink>
+              <NavLink href="www.linkedin.com/in/christopher-faison-1b7b6948"><img src={linkedin}/></NavLink>
 
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
