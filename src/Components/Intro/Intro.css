@@ -1,6 +1,6 @@
 
 .container {
-    max-width: 1400px;
+    max-width: 2000px;
 }
 .container > div > div > div  {
   display: flex;
@@ -94,7 +94,7 @@
 
 .sitebutton2 {
   margin-top: 320px;
-  margin-left: 1750px;
+  margin-left: 2250px;
   padding: 5px;
   top: 260px;
   position: fixed;
@@ -103,7 +103,7 @@
 
 .sitebutton3 {
   margin-top: 320px;
-  margin-left: 3170px;
+  margin-left: 4200px;
   padding: 5px;
   top: 260px;
   position: fixed;
