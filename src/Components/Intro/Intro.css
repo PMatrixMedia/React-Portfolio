@@ -1,7 +1,8 @@
+
 .container {
-  max-width: 100%;
+    max-width: 1400px;
 }
-.container > div > div {
+.container > div > div > div  {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +35,9 @@
 }
 
 .stripe {
-  height: 3px;
+  padding: 5px;
+  margin-top: 10px;
+  height: 4px;
   width: auto;
 }
 
@@ -52,9 +55,17 @@
   );
 }
 
-.slopeBegin,
+.slopeBegin {
+  position: absolute;
+  display: flex;
+  width: 160%;
+  height: 100%;
+  cursor: progress;
+}
+
 .slopeEnd {
   position: absolute;
+  display: flex;
   width: 140%;
   height: 100%;
   cursor: progress;
@@ -76,25 +87,25 @@
   margin-top: 320px;
   margin-left: 310px;
   padding: 5px;
-  top: 230px;
+  top: 260px;
   position: fixed;
   display: inline-flex;
 }
 
 .sitebutton2 {
   margin-top: 320px;
-  margin-left: 2290px;
+  margin-left: 1750px;
   padding: 5px;
-  top: 230px;
+  top: 260px;
   position: fixed;
   display: inline-flex;
 }
 
 .sitebutton3 {
   margin-top: 320px;
-  margin-left: 4170px;
+  margin-left: 3170px;
   padding: 5px;
-  top: 230px;
+  top: 260px;
   position: fixed;
   display: inline-flex;
 }
@@ -103,5 +114,5 @@
   margin-right: 350px;
   padding: 5px;
   top: 10px;
-  position: relative;
+  position: fixed;
 }

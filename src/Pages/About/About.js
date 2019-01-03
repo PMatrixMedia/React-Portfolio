@@ -16,8 +16,8 @@ import img from './avatar.jpg'
         <Jumbotron fluid className="Jumbotron">
           <Container fluid className="container">
             <Media>
-                <Media left className="avatar" href={img}>
-                <Media className='profile-image' object src={'./avatar.jpg'} alt={img} />
+                <Media left className="avatar" href={'/static/media/avatar.jpg'}>
+                <Media className='profile-image' object src={img} alt={img} />
             </Media>
             <Media heading className='bodyheading'>About Me</Media>
               <br>

@@ -7,7 +7,7 @@ app.use(express.static("Pages"));
 
 app.use(express.static("Components"));
 
-app.use(express.static("images"));
+app.use(express.static("Images"));
 
 app.use(express.static(path.join(__dirname, 'build')));
 
