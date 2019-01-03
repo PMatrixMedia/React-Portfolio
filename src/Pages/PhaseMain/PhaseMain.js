@@ -21,9 +21,7 @@ import "./style.css";
           <div>
           <Jumbotron Fluid className="Jumbotron">
             <Container Fluid className="container">
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+            <p>This Page is the Portal to PhaseMatrixMedia.com Once Completed it will contain internal links as well as a updated blog for the site.</p>
             </Container>
           </Jumbotron>
           </div>
@@ -35,4 +33,4 @@ import "./style.css";
 
 ReactDOM.render(<PhaseMain />, document.getElementById("root"));
 
-  export default PhaseMain;
+export default PhaseMain;
