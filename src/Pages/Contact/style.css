@@ -1,9 +1,7 @@
 .body {
     background-color: black;
-
 }
-
-.Jumbotron {
+    .jumbotron-fluid {
     background-color: black;
     color: white;
   }

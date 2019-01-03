@@ -1,12 +1,14 @@
 // JavaScript source code
 import React from 'react';
+import Navbar from '../../Components/navbar'
 import { Jumbotron, Container, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './style.css';
 
 export default class Contact extends React.Component {
   render() {
     return (
-      <div Classname="Jumbotron">
+      <div>
+      <Navbar/>
       <Jumbotron fluid>
         <Container fluid>
           <Form>
@@ -26,7 +28,7 @@ export default class Contact extends React.Component {
           </Form>
         </Container>
       </Jumbotron>
-      </div>
+      </div>  
     );
   }
 }

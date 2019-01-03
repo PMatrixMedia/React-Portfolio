@@ -4,7 +4,7 @@ import { Jumbotron, Container, Media } from "reactstrap";
 import "./style.css";
 import ReactDOM from 'react-dom';
 import img from './avatar.jpg'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
  class About extends React.Component {
   constructor(props) {
     super();
