@@ -14,12 +14,12 @@ const Page = ({offset, caption, first, second, gradient, onDoubleClick}) => (
             <div className="slopeBegin" />
           </Parallax.Layer>
 
-          <Parallax.Layer offset={offset} speed={-0.2} onDoubleClick={onDoubleClick}>
+          <Parallax.Layer offset={offset} speed={-0.4} onDoubleClick={onDoubleClick}>
             <div className={`slopeEnd ${gradient}`} />
             </Parallax.Layer>
 
             <Parallax.Layer className="text number" offset={offset} speed={0.3}>
-            <span>0{offset + 1}</span>
+            <span>0{offset + 2}</span>
             </Parallax.Layer>
 
             <Parallax.Layer className="text header" offset={offset} speed={0.4}>
@@ -55,7 +55,7 @@ export default class Intro extends Component {
   scroll = to => this.refs.parallax.scrollTo(to);
 
   Portenter = to => this.Portenter("/about");
-  PhasEnter = to => this.PhasEnter("/main")
+  PhasEnter = to => this.PhasEnter("/main");
   
 
   render() {
