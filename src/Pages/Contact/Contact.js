@@ -1,4 +1,5 @@
-// JavaScript source code
+/* eslint-disable no-unused-vars */
+
 import React from 'react';
 import Navbar from '../../Components/navbar'
 import { Jumbotron, Container, Button, Form, FormGroup, Label, Input } from 'reactstrap';

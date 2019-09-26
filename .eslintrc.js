@@ -3,11 +3,12 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    "extends": "react-app",
+    "extends": "eslint:recommended",
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -20,4 +21,3 @@ module.exports = {
     ],
     "rules": {}
 };
-yield

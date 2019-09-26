@@ -1,1 +1,1 @@
-export { default } from "./rs-navbar";
+export { default } from "./RSnavbar";

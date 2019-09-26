@@ -1,18 +1,34 @@
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import RSnavbar from '../../Components/RSnavbar/RSnavbar';
-import { Jumbotron, Container, Media } from "reactstrap";
+import {
+   Jumbotron,
+   Container,
+   Media } from 'reactstrap';
+import RSnavbar from '../../Components/RSnavbar';
 import "./style.css";
 import ReactDOM from 'react-dom';
 import img from './avatar.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
  class About extends React.Component {
-  constructor(props) {
-    super();
+   constructor(props) {
+     super(props);
+     this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
   }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  
   render() {
     return (
       <div>
-        <RSnavbar className="Nav" />
+        <RSnavbar/>
         <Jumbotron fluid className="Jumbotron">
           <Container fluid className="container">
             <Media>
@@ -31,8 +47,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         </Jumbotron>
       </div>
     )
+    }
   }
-}
 
   ReactDOM.render(<About />, document.getElementById("root"));
 

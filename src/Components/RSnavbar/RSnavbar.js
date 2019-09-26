@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./navbar.css";
 import git from './GitHub.png'
@@ -21,7 +22,7 @@ export default class RSnavbar extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
+ this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false
     };

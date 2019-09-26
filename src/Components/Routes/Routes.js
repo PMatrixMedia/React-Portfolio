@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import Intro from '../Intro/Intro';

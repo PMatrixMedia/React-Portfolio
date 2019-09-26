@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {Component} from 'react';
 import { Menu, Icon } from 'antd';
 import './navbar.css';
@@ -9,33 +10,34 @@ const MenuItemGroup = Menu.ItemGroup;
 
 
   class Navbar extends React.Component {
-    state = {
-      current: 'code-o',
-    }
+    constructor(props){
+      super(props);
+this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   
-    handleClick = (e) => {
-      console.log('click ', e);
-      this.setState({
-        current: e.key,
-      });
-    }
   
     render() {
       return (
         <Menu
-          onClick={this.handleClick}
-          selectedKeys={[this.state.current]}
           mode="horizontal"
           theme="dark"
         >
           <Menu.Item key="code-o">
           <a href="/" target="_blank" rel="noopener noreferrer"></a>
-            <Icon type="code-o" />Home
+            <Icon type="code-o" >Home</Icon>
           </Menu.Item>
           <Menu.Item key="profile" disabled>
             <Icon type="profile" />Blog
           </Menu.Item>
-          <SubMenu title={<span className="submenu-title-wrapper"><Icon type="setting" />Features</span>}>
+          <SubMenu onClick={this.handleClick} title={<span className="submenu-title-wrapper"><Icon type="setting" />Features</span>}>
             <MenuItemGroup title="Site Features">
               <Menu.Item key="setting:1">Remote Access</Menu.Item>
               <Menu.Item key="setting:2">API</Menu.Item>
