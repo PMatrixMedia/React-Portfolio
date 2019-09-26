@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import Navbar from '../../Components/navbar/navbar';
 import ReactDOM from "react-dom";
