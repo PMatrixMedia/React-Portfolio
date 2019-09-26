@@ -34,7 +34,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   }
 }
 
-
   ReactDOM.render(<About />, document.getElementById("root"));
 
 export default About;
