@@ -4,7 +4,6 @@
     "builds": [
         { "src": "package.json", "use": "@now/static-build" },
         { "src": "index.js", "use": "@now/node" },
-        { "src": "*.js", "use": "@now/node" }
     ],
     "routes": [
         {"src": "^/static/(.*)", "dest": "/static/$1"},
