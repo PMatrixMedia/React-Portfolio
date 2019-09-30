@@ -2,6 +2,8 @@
 .container {
     max-width: 2000px;
 }
+
+
 .container > div > div > div  {
   display: flex;
   align-items: center;
