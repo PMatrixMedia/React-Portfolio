@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import { Parallax } from "react-spring";
 import { Button } from "reactstrap";
-import About from "../../Pages/About/About";
 import "./Intro.css";
 
 
