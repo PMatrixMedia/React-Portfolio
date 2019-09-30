@@ -61,8 +61,8 @@
     "eslint-plugin-react": "^7.14.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "start": "./scripts/start.js",
+    "build": "./scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "repository": {
