@@ -70,7 +70,7 @@ export default class Intro extends Component {
 
                     <Page offset={1} gradient="teal" caption="All things VR" first="VR & AR" onDoubleClick={() => this.scroll(2)}/>
                         <div className="sitebutton2">
-                            <Button Style="position: fixed" color="primary" size="lg">Enter</Button>
+                            <Button Style="position: fixed" color="primary" size="lg"href="phasevr.pmatrix.now.sh">Enter</Button>
                         </div>
        
                     <Page offset={2} gradient="tomato" caption="Who I am" first="Portfolio" second="" onDoubleClick={() => this.scroll(0)}/>
