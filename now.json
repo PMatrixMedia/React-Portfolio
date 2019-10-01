@@ -3,7 +3,6 @@
     "name": "React-Porfolio",
     "builds": [
         { "src": "package.json", "use": "@now/static-build" }
-        
     ],
     "routes": [
         {"src": "^/static/(.*)", "dest": "/static/$1"},
