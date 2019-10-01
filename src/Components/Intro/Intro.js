@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
-import { Parallax } from "react-spring";
+import { Parallax } from 'react-spring';
 import { Button } from "reactstrap";
 import "./Intro.css";
 
