@@ -56,6 +56,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "@now/node": "^1.0.1",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.14.3"
@@ -74,7 +75,7 @@
   "bugs": {
     "url": "https://github.com/PMatrixMedia/React-Portfolio/issues"
   },
-  "homepage": "http://www.phasematrixmedia.com",
+  "homepage": "http://www.phasematrixmedia.online",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
