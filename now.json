@@ -2,8 +2,7 @@
     "version": 2,
     "name": "React-Porfolio",
     "builds": [
-        { "src": "package.json", "use": "@now/now-build" },
-        { "src": "index.js", "use": "@now/node" }
+        { "src": "package.json", "use": "@now/now-build" }
     ],
     "routes": [
         {"src": "^/static/(.*)", "dest": "/static/$1"},
