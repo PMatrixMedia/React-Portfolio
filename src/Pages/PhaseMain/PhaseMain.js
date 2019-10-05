@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import Navbar from '../../Components/navbar/navbar';
 import ReactDOM from 'react-dom';
 import { Jumbotron, Container } from 'reactstrap';
-import './antd.css';
+import '../../antd.css';
 import "./style.css";
+import '../../bootstrap.css';
 
 
 
@@ -18,7 +19,8 @@ import "./style.css";
           <Navbar/>
           <Jumbotron Fluid className="Jumbotron">
             <Container Fluid className="container">
-            <p>This Page is the Portal to PhaseMatrixMedia.com Once Completed it will contain internal links as well as a updated blog for the site.</p>
+            <h1>I decided to use facebook for the blogging, so that I can also use facebook/instagram and facebook live for events related to vr/ar and other things on the site.  Stay tuned for more update and content soon.</h1>
+             <p>You can access the page by clicking on the blog button at the top.</p>
             </Container>
           </Jumbotron>
           </React.Fragment>

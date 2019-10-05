@@ -1,6 +1,10 @@
+.h1 {
+    color: white;
+}
 .p{
     color: orange;
 }
 .Jumbotron {
     background-color: black;
+    color: white;
 }

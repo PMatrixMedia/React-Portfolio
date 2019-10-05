@@ -35,7 +35,8 @@ this.toggle = this.toggle.bind(this);
           <a href="/" target="_blank" rel="noopener noreferrer"></a>
             <Icon type="code-o" >Home</Icon>
           </Menu.Item>
-          <Menu.Item key="profile" disabled>
+          <Menu.Item key="profile">
+          <a href="https://www.facebook.com/Phasematrixmedia-108166067256262/" target="_blank" rel="noopener noreferrer"></a>
             <Icon type="profile" />Blog
           </Menu.Item>
           <SubMenu onClick={this.handleClick} title={<span className="submenu-title-wrapper"><Icon type="setting" />Features</span>}>
