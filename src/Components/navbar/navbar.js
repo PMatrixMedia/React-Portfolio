@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, {Component} from 'react';
 import { Menu, Icon } from 'antd';
+import '../../antd.css'
 import './navbar.css';
 
 

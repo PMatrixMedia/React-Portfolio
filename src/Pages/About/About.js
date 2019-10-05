@@ -8,7 +8,7 @@ import RSnavbar from '../../Components/RSnavbar';
 import "./style.css";
 import ReactDOM from 'react-dom';
 import img from './avatar.jpg'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../bootstrap.css';
 
 
  class About extends React.Component {

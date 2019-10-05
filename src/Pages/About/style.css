@@ -6,7 +6,9 @@
 .Body {
   background-color: black;
 }
-
+.body div {
+  background-color: black;
+}
 
 .Nav {
   background-color: gray;

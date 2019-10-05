@@ -1,9 +1,14 @@
-﻿@import '~antd/dist/antd.css';
+﻿
 
 .App {
     text-align: center;
 }
-
+.body{
+    background-color: black;
+}
+.body div{
+    background-color: black;
+}
 .Jumbotron {
     background-color: black;
 }

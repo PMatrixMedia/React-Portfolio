@@ -1,7 +1,13 @@
 .body {
     background-color: black;
 }
-    .jumbotron-fluid {
+.jumbotron{
+    background-color: black;
+    display: inherit;
+}
+
+.jumbotron-fluid {
+    display: inherit; 
     background-color: black;
     color: white;
   }

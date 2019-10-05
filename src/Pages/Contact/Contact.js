@@ -2,9 +2,10 @@
 
 import React from 'react';
 import Navbar from '../../Components/navbar'
+import '../../antd.css'
 import { Jumbotron, Container, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../bootstrap.css';
 
 export default class Contact extends React.Component {
   constructor () {
