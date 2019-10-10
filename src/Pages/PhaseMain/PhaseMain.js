@@ -19,7 +19,7 @@ import '../../bootstrap.css';
           <Navbar/>
           <Jumbotron Fluid className="Jumbotron">
             <Container Fluid className="container">
-            <h1>I decided to use facebook for the blogging, so that I can also use facebook/instagram and facebook live for events related to vr/ar and other things on the site.  Stay tuned for more update and content soon.</h1>
+            <h2>I decided to use facebook for the blogging, so that I can also use facebook/instagram and facebook live for events related to vr/ar and other things on the site.  Stay tuned for more update and content soon.</h2>
              <p>You can access the page by clicking on the blog button at the top.</p>
             </Container>
           </Jumbotron>
