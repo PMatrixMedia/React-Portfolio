@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { Parallax } from 'react-spring';
 import { Button } from "reactstrap";
 import "./Intro.css";
+import "../../bootstrap.css"
+
 
 
 
@@ -18,8 +20,8 @@ const Page = ({offset, caption, first, second, gradient, onDoubleClick}) => (
             <div className={`slopeEnd ${gradient}`} />
             </Parallax.Layer>
 
-            <Parallax.Layer className="text number" offset={offset} speed={0.3}>
-            <span>0{offset + 2}</span>
+            <Parallax.Layer className="text number" offset={offset} speed={0.4}>
+            <span>0{offset + 1}</span>
             </Parallax.Layer>
 
             <Parallax.Layer className="text header" offset={offset} speed={0.4}>
@@ -62,9 +64,9 @@ export default class Intro extends Component {
   return (
      
         <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
-                    <Page offset={0} gradient="pink" caption="PhaseMatrix Media" first="Double Click Slope to Scroll" second="Buttons Give You Access to the Site"  onDoubleClick={() => this.scroll(1)}/>
+                    <Page offset={0} gradient="pink" caption="PhaseMatrix Media" first="Double Click Slope to Scroll" second="Buttons Give You Access to the Sites"  onDoubleClick={() => this.scroll(1)}/>
                         <div className="sitebutton1">
-                          <Button Style="position: fixed" onClick={() => this.PhasEnter} color="danger" size="lg"href="/main">Enter</Button>
+                          <Button Style="position: fixed" onClick={() => this.PhasEnter} color="success" size="lg"href="/main">Enter</Button>
                         </div>
 
                     <Page offset={1} gradient="teal" caption="All things VR" first="VR & AR" onDoubleClick={() => this.scroll(2)}/>
