@@ -1,5 +1,6 @@
 .container {
     max-width: 2000px;
+    background-color: black;
 }
 .ul{
     visibility: hidden;

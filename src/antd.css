@@ -63,7 +63,7 @@ body {
   font-variant: tabular-nums;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.65);
-  background-color: #fff;
+  background-color: black;
 }
 [tabindex='-1']:focus {
   outline: none !important;
@@ -82,7 +82,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
+  color: white;
   font-weight: 500;
 }
 p {
@@ -2950,7 +2950,7 @@ mark {
   display: block;
   padding: 5px 12px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: large;
   color: rgba(0, 0, 0, 0.65);
   white-space: nowrap;
   cursor: pointer;

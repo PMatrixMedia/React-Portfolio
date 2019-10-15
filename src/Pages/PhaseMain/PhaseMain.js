@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import Navbar from '../../Components/navbar/navbar';
 import ReactDOM from 'react-dom';
 import { Jumbotron, Container } from 'reactstrap';
-import '../../antd.css';
-import "./style.css";
-import '../../bootstrap.css';
+import "../../antd.css";
+import "./style.sass";
+import "../../scss/bootstrap.scss";
 
 
 
@@ -18,9 +18,9 @@ import '../../bootstrap.css';
         <React.Fragment>
           <Navbar/>
           <Jumbotron Fluid className="Jumbotron">
-            <Container Fluid className="container">
+            <Container Fluid className="news-container">
             <h2>I decided to use facebook for the blogging, so that I can also use facebook/instagram and facebook live for events related to vr/ar and other things on the site.  Stay tuned for more update and content soon.</h2>
-             <p>You can access the page by clicking on the blog button at the top.</p>
+             <h3>You can access the page by clicking on the blog button at the top.</h3>
             </Container>
           </Jumbotron>
           </React.Fragment>

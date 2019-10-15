@@ -31,10 +31,7 @@ this.toggle = this.toggle.bind(this);
           mode="horizontal"
           theme="dark"
         >
-          <Menu.Item key="code-o">
-          <a href="/" target="_blank" rel="noopener noreferrer"></a>
-            <Icon type="code-o" >Home</Icon>
-          </Menu.Item>
+          <Menu.Item key="code-o"><a href="/" target="_blank" rel="noopener noreferrer"></a><Icon type="code-o" >Home</Icon>Home</Menu.Item>
           <Menu.Item key="profile">
           <a href="https://www.facebook.com/Phasematrixmedia-108166067256262/" target="_blank" rel="noopener noreferrer"></a>
             <Icon type="profile" />Blog
@@ -48,9 +45,6 @@ this.toggle = this.toggle.bind(this);
             <MenuItemGroup title="Coding Repos">
               <Menu.Item key="setting:1">Github
               <a href="https://github.com/PMatrixMedia" target="_blank" rel="noopener noreferrer"></a>
-              </Menu.Item>
-              <Menu.Item key="setting:3">Code Pen
-              <a href="https://codepen.io/pmatrixmedia/" target="_blank" rel="noopener noreferrer"></a>
               </Menu.Item>
               <Menu.Item key="setting:4">Code Sandbox
               <a href="https://codesandbox.io/u/PMatrixMedia" target="_blank" rel="noopener noreferrer"></a>
