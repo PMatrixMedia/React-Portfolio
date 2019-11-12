@@ -57,7 +57,7 @@ export default class RSnavbar extends React.Component {
                   Projects
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Stream Lyfe</DropdownItem>
+                  <DropdownItem href="https://phasevr.pmatrix.now.sh/">Phasevr</DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>Cuber</DropdownItem>
                   <DropdownItem divider />
