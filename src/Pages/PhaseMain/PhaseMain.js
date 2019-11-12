@@ -19,7 +19,7 @@ import "../../scss/bootstrap.scss";
           <Navbar/>
           <Jumbotron Fluid className="Jumbotron">
             <Container Fluid className="news-container">
-            <h2>I decided to use facebook for the blogging, so that I can also use facebook/instagram and facebook live for events related to vr/ar and other things on the site.  Stay tuned for more update and content soon.</h2>
+            <h2>Quick Update: 11/12/2019:  Published an example app over on my VR page for the workshop I am giving on react360 for the global vr day.  Should have alot of video footage and pics of the event that I plan to post here on this site.</h2>
              <h3>You can access the page by clicking on the blog button at the top.</h3>
             </Container>
           </Jumbotron>
