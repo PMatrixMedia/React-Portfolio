@@ -46,8 +46,9 @@ const Banner = () => (
                 yPercent: 0,
             }}
           >
-          </Tween>
           <img src="../../Images/sprite.png" alt="" />
+          </Tween>
+         
           <Tween
           position="0"
             from={{
