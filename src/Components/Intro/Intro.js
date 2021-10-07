@@ -69,7 +69,7 @@ export default class Intro extends Component {
                           <Button Style="position: fixed" onClick={() => this.PhasEnter} color="success" size="lg"href="/main">Enter</Button>
                         </div>
 
-                    <Page offset={1} gradient="teal" caption="All things VR" first="VR & AR" onDoubleClick={() => this.scroll(2)}/>
+                    <Page offset={1} gradient="teal" caption="All things VR & AR" first="Projects & Services" onDoubleClick={() => this.scroll(2)}/>
                         <div className="sitebutton2">
                             <Button Style="position: fixed" color="primary" size="lg"href="https://phasevr-pmatrix.vercel.app/">Enter</Button>
                         </div>
