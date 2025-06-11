@@ -107,6 +107,23 @@ input[type='password'],
 input[type='number'],
 textarea {
   -webkit-appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
+  appearance: none;
 }
 ol,
 ul,
@@ -255,6 +272,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
@@ -274,6 +292,7 @@ input[type='time'],
 input[type='datetime-local'],
 input[type='month'] {
   -webkit-appearance: listbox;
+  appearance: listbox;
 }
 textarea {
   overflow: auto;
@@ -305,7 +324,9 @@ progress {
 }
 [type='search'] {
   outline-offset: -2px;
+  -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
 }
 [type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-decoration {
@@ -13793,6 +13814,7 @@ textarea.ant-time-picker-input {
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background-clip: padding-box;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .ant-dropdown-menu-item-group-title {
   color: rgba(0, 0, 0, 0.45);
@@ -15002,6 +15024,7 @@ textarea.ant-input-number {
   width: 100%;
   text-align: left;
   outline: 0;
+  appearance: textfield;
   -moz-appearance: textfield;
   height: 30px;
   -webkit-transition: all 0.3s linear;
@@ -16612,7 +16635,6 @@ textarea.ant-mention-wrapper .ant-mention-editor {
 .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow:after {
   content: '';
   position: absolute;
-  vertical-align: baseline;
   background: #fff;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
@@ -17370,7 +17392,6 @@ textarea.ant-mention-wrapper .ant-mention-editor {
 .ant-modal-close-x {
   display: block;
   font-style: normal;
-  vertical-align: baseline;
   text-align: center;
   text-transform: none;
   text-rendering: auto;

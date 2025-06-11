@@ -1,8 +1,12 @@
-/* eslint-disable no-unused-vars */
+// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // Or 'react-dom'
+import RoutesComponent from './Components/Routes/Routes'; // Adjust path
 import './index.css';
-import Routes from './Components/Routes/Routes'
 
-
-ReactDOM.render(<Routes />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <RoutesComponent /> {/* This component already contains the Router */}
+  </React.StrictMode>
+);

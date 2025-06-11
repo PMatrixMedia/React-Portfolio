@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import React from "react";
 import "./navbar.css";
 import git from './GitHub.png'
